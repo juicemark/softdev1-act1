@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Profiles</title>
+    <style>
+        body {
+            background-image: url('samplePic.jpg');
+            background-size: cover;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .additional-image {
+            text-align: center;
+            margin-top: 20px; /* Adjust spacing */
+        }
+
+        .additional-image img {
+            max-width: 30%; /* Limit the image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Add border radius for rounded corners */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+        }
+
+        .tab-content {
+            display: none;
+        }
+        .tab-content:target {
+            display: block;
+        }
+        nav {
+            text-align: center; /* Center align the nav items */
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: inline-flex; /* Use inline-flex for horizontal alignment */
+        }
+        nav ul li {
+            margin-right: 10px;
+            color: black; /* Set font color to black */
+        }
+        /* Centered text style */
+        .centered-text {
+            text-align: center;
+            margin-top: 20px;
+            color: white; /* Adjust text color for visibility */
+        }
+        /* Styling for individual member tables */
+        .member-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .member-container img {
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .member-details {
+            flex: 1;
+        }
+        .member-details h2 {
+            margin-top: 0;
+        }
+        .member-details p {
+            margin-bottom: 5px;
+        }
+        .member-table-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+            margin-right: 0; /* Remove right margin */
+        }
+        .member-table {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            max-width: calc(50% - 10px); /* 50% width with margin */
+            margin: 0 auto; /* Center the table */
+            margin-left: -280px; /* Remove left margin */
+        }
+        .member-table img {
+            display: block;
+            margin: 0 auto 10px; /* Center the image */
+        }
+        .member-table td {
+            padding: 5px; /* Adjusted padding for table cells */
+        }
+        .abt-us-table {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 0px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            max-width: calc(80% - 10px);
+            margin: 0 auto; /* Center the table */
+        }
+        .abt-us-table td {
+            padding: 5px; /* Adjusted padding for table cells */
+        }
+        .faq-table {
+            flex: 1;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 0px;
+            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            max-width: calc(80% - 10px);
+            margin: 0 auto; /* Center the table */
+        }
+        .faq-table td {
+            padding: 5px; /* Adjusted padding for table cells */
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Welcome Section -->
+    <div class="welcome-section">
+        <div class="centered-text">
+            <h1>Welcome to our Team Profile HTML Site</h1>
+        </div>
+            <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home" style="text-decoration: none;">Home</a></li>
+            <li><a href="#members" style="text-decoration: none;">Members</a></li>
+            <li><a href="#abt-us" style="text-decoration: none;">About us</a></li>
+            <li><a href="#faq" style="text-decoration: none;">FAQ</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div>
+
+        <div id="home" style="height: 100vh;">
+            <div class="additional-image">
+                <h1>INSERT GROUP PHOTO</h1>
+                <img src="samplePic.jpg" alt="Additional Image">
+            </div>
+        </div>
+
+    <!-- Team Members Content -->
+    <div id="members">
+        <h1>Team Profiles</h1>
+
+        <!-- Member 1 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="path/to/image1.jpg" alt="Tito Zac">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 1</h2>
+                            <p>Name: Zacarias</p>
+                            <p>Role: Project Manager</p>
+                            <p>Email: <a href="mailto:john.doe@example.com">Zac@example.com</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">LinkedIn Profile</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 2 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="path/to/image2.jpg" alt="Jane Smith">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 2</h2>
+                            <p>Name: Jane Smith</p>
+                            <p>Role: Software Engineer</p>
+                            <p>Email: <a href="mailto:jane.smith@example.com">jane.smith@example.com</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/janesmith">LinkedIn Profile</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 3 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="path/to/image3.jpg" alt="Michael Brown">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 3</h2>
+                            <p>Name: Michael Brown</p>
+                            <p>Role: UX Designer</p>
+                            <p>Email: <a href="mailto:michael.brown@example.com">michael.brown@example.com</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/michaelbrown">LinkedIn Profile</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 4 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="path/to/image4.jpg" alt="Emily Davis">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 4</h2>
+                            <p>Name: Emily Davis</p>
+                            <p>Role: Data Scientist</p>
+                            <p>Email: <a href="mailto:emily.davis@example.com">emily.davis@example.com</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/emilydavis">LinkedIn Profile</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br/>
+        <!-- Member 5 -->
+        <div class="member-table-container">
+            <div class="member-container">
+                <img src="path/to/image5.jpg" alt="David Wilson">
+                <div class="member-details">
+                </div>
+            </div>
+            <div class="member-table">
+                <table>
+                    <tr>
+                        <td>
+                            <h2>Member 5</h2>
+                            <p>Name: David Wilson</p>
+                            <p>Role: Marketing Specialist</p>
+                            <p>Email: <a href="mailto:david.wilson@example.com">david.wilson@example.com</a></p>
+                            <p>LinkedIn: <a href="https://www.linkedin.com/in/davidwilson">LinkedIn Profile</a></p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div id="abt-us" style="height: 100vh;">
+        <div class="abt-us-table">
+            <h1 style="text-align: center; color: black;" font-color="black">ABOUT US</h1>
+            </div>
+    </div>
+
+    <div id="faq" style="height: 100vh;">
+        <div class="faq-table">
+        <h1 style="text-align: center; color: black;">FAQ</h1>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
