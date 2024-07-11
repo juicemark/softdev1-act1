@@ -38,25 +38,14 @@
         .tab-content:target {
             display: block;
         }
-        nav {
-            text-align: center; /* Center align the nav items */
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            display: inline-flex; /* Use inline-flex for horizontal alignment */
-        }
-        nav ul li {
-            margin-right: 10px;
-            color: black; /* Set font color to black */
-        }
+
         /* Centered text style */
         .centered-text {
             text-align: center;
             margin-top: 20px;
             color: white; /* Adjust text color for visibility */
         }
+
         /* Styling for individual member tables */
         .member-container {
             display: flex;
@@ -131,7 +120,45 @@
             padding: 5px; /* Adjusted padding for table cells */
         }
 
+        /* Navigation table styles */
+        .nav-table-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+            border-radius: 10px;
+            padding: 5px; /* Adjusted padding */
+            max-width: 1000px; /* Adjust the width as needed */
+            margin: 0 auto; /* Center the container */
+        }
+        .nav-table {
+            flex: 1;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            border-spacing: 5px; /* Adjust spacing between table cells */
+        }
+        .nav-table td {
+            padding: 5px;
+        }
+        .nav-table a {
+            text-decoration: none;
+            color: white;
+        }
 
+        /* Group table styles */
+        .group-table {
+            width: 150px;
+            margin-right: 20px;
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .group-table h2 {
+            margin: 0;
+            font-size: 1.2em;
+        }
     </style>
 </head>
 <body>
@@ -140,24 +167,33 @@
         <div class="centered-text">
             <h1>Welcome to our Team Profile HTML Site</h1>
         </div>
-            <!-- Navigation -->
-    <nav>
-        <ul>
-            <li><a href="#home" style="text-decoration: none;">Home</a></li>
-            <li><a href="#members" style="text-decoration: none;">Members</a></li>
-            <li><a href="#abt-us" style="text-decoration: none;">About us</a></li>
-            <li><a href="#faq" style="text-decoration: none;">FAQ</a></li>
-        </ul>
-    </nav>
     </div>
-    <div>
 
-        <div id="home" style="height: 100vh;">
-            <div class="additional-image">
-                <h1>INSERT GROUP PHOTO</h1>
-                <img src="samplePic.jpg" alt="Additional Image">
-            </div>
+    <!-- Navigation and Group Table Section -->
+    <div class="nav-table-container">
+        <!-- Group Table -->
+        <div class="group-table">
+            <h2>Group 6</h2>
         </div>
+
+        <!-- Navigation -->
+        <table class="nav-table">
+            <tr>
+                <td><a href="#home">Home</a></td>
+                <td><a href="#members">Members</a></td>
+                <td><a href="#abt-us">About us</a></td>
+                <td><a href="#faq">FAQ</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Home Section -->
+    <div id="home" style="height: 100vh;">
+        <div class="additional-image">
+            <h1>INSERT GROUP PHOTO</h1>
+            <img src="samplePic.jpg" alt="Additional Image">
+        </div>
+    </div>
 
     <!-- Team Members Content -->
     <div id="members">
@@ -275,17 +311,18 @@
         </div>
     </div>
 
+    <!-- About Us Section -->
     <div id="abt-us" style="height: 100vh;">
         <div class="abt-us-table">
-            <h1 style="text-align: center; color: black;" font-color="black">ABOUT US</h1>
-            </div>
-    </div>
-
-    <div id="faq" style="height: 100vh;">
-        <div class="faq-table">
-        <h1 style="text-align: center; color: black;">FAQ</h1>
+            <h1 style="text-align: center; color: black;">ABOUT US</h1>
         </div>
     </div>
+
+    <!-- FAQ Section -->
+    <div id="faq" style="height: 100vh;">
+        <div class="faq-table">
+            <h1 style="text-align: center; color: black;">FAQ</h1>
+        </div>
     </div>
 </body>
 </html>
