@@ -22,31 +22,22 @@
 
         .additional-image {
             text-align: center;
-            margin-top: 20px; /* Adjust spacing */
+            margin-top: 20px;
         }
 
         .additional-image img {
-            max-width: 30%; /* Limit the image width */
-            height: auto; /* Maintain aspect ratio */
-            border-radius: 5px; /* Add border radius for rounded corners */
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+            max-width: 30%;
+            height: auto;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
         }
 
-        .tab-content {
-            display: none;
-        }
-        .tab-content:target {
-            display: block;
-        }
-
-        /* Centered text style */
         .centered-text {
             text-align: center;
             margin-top: 20px;
-            color: white; /* Adjust text color for visibility */
+            color: white;
         }
 
-        /* Styling for individual member tables */
         .member-container {
             display: flex;
             align-items: center;
@@ -54,7 +45,7 @@
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 20px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.7);
             max-width: 600px;
             margin: 0 auto;
         }
@@ -76,67 +67,64 @@
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
-            margin-right: 0; /* Remove right margin */
         }
         .member-table {
             flex: 1;
             border: 1px solid #ccc;
             border-radius: 20px;
             padding: 10px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
-            max-width: calc(50% - 10px); /* 50% width with margin */
-            margin: 0 auto; /* Center the table */
-            margin-left: -280px; /* Remove left margin */
+            background-color: rgba(255, 255, 255, 0.7);
+            max-width: calc(50% - 10px);
+            margin: 0 auto;
         }
         .member-table img {
             display: block;
-            margin: 0 auto 10px; /* Center the image */
+            margin: 0 auto 10px;
         }
         .member-table td {
-            padding: 5px; /* Adjusted padding for table cells */
+            padding: 5px;
         }
         .abt-us-table {
             flex: 1;
             border: 1px solid #ccc;
             border-radius: 10px;
             padding: 0px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.7);
             max-width: calc(80% - 10px);
-            margin: 0 auto; /* Center the table */
+            margin: 0 auto;
         }
         .abt-us-table td {
-            padding: 5px; /* Adjusted padding for table cells */
+            padding: 5px;
         }
         .faq-table {
             flex: 1;
             border: 1px solid #ccc;
             border-radius: 10px;
             padding: 0px;
-            background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.7);
             max-width: calc(80% - 10px);
-            margin: 0 auto; /* Center the table */
+            margin: 0 auto;
         }
         .faq-table td {
-            padding: 5px; /* Adjusted padding for table cells */
+            padding: 5px;
         }
 
-        /* Navigation table styles */
         .nav-table-container {
             display: flex;
             align-items: center;
             margin-top: 20px;
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
-            padding: 5px; /* Adjusted padding */
-            max-width: 1000px; /* Adjust the width as needed */
-            margin: 0 auto; /* Center the container */
+            padding: 5px;
+            max-width: 1000px;
+            margin: 0 auto;
         }
         .nav-table {
             flex: 1;
             text-align: center;
             margin: 0;
             padding: 0;
-            border-spacing: 5px; /* Adjust spacing between table cells */
+            border-spacing: 5px;
         }
         .nav-table td {
             padding: 5px;
@@ -146,18 +134,36 @@
             color: white;
         }
 
-        /* Group table styles */
         .group-table {
             width: 150px;
             margin-right: 20px;
             text-align: center;
-            background-color: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+            background-color: rgba(255, 255, 255, 0.3);
             border-radius: 10px;
             padding: 10px;
         }
         .group-table h2 {
             margin: 0;
             font-size: 1.2em;
+        }
+
+        /* Styling for FAQ Section */
+        .faq-item {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #fafafa;
+            color: black; /* Make text color black for better readability */
+        }
+
+        .faq-item h2 {
+            margin-top: 0;
+            color: #007BFF;
+        }
+
+        .faq-item p {
+            margin-bottom: 0;
         }
     </style>
 </head>
@@ -322,14 +328,32 @@
     <div id="faq" style="height: 100vh;">
         <div class="faq-table">
             <h1 style="text-align: center; color: black;">FAQ</h1>
+            <!-- FAQ Item 1 -->
+            <div class="faq-item">
+                <h2>Q: What is this website about?</h2>
+                <p>A: This website is designed to showcase team profiles and provide information about our team members.</p>
+            </div>
+            <!-- FAQ Item 2 -->
+            <div class="faq-item">
+                <h2>Q: How can I contact a team member?</h2>
+                <p>A: You can contact team members through the email addresses provided in their profiles.</p>
+            </div>
+            <!-- FAQ Item 3 -->
+            <div class="faq-item">
+                <h2>Q: Where can I find more information about the team?</h2>
+                <p>A: More information about the team can be found in the 'About Us' section of the website.</p>
+            </div>
+            <!-- FAQ Item 4 -->
+            <div class="faq-item">
+                <h2>Q: How can I join the team?</h2>
+                <p>A: To join the team, please visit the 'Contact Us' section and send us a message expressing your interest.</p>
+            </div>
+            <!-- FAQ Item 5 -->
+            <div class="faq-item">
+                <h2>Q: What kind of projects does the team work on?</h2>
+                <p>A: The team works on various projects ranging from web development to data analysis. More details can be found in the individual team member profiles.</p>
+            </div>
         </div>
-        
-        <!-- FAQ Item 1 -->
-        <div>
-            <h2>Q: What is this website about?</h2>
-            <p>A: This website is designed to showcase team profiles and provide information about our team members.</p>
-        </div>
-        
     </div>
 </body>
 </html>
