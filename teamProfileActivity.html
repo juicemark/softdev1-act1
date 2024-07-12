@@ -8,7 +8,7 @@
         body {
             background-image: url('GroupPhoto.png');
             background-size: cover;
-            background-attachment: fixed ;
+            background-attachment: fixed;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
@@ -51,29 +51,34 @@
             margin: 0 auto;
         }
 
-        .member-description {
-    color: black;
-        }
-        
         .member-container img {
             width: 100px;
             height: 100px;
             margin-right: 20px;
         }
+
         .member-details {
             flex: 1;
         }
+
         .member-details h2 {
             margin-top: 0;
         }
+
         .member-details p {
             margin-bottom: 5px;
         }
+
+        .member-description {
+            color: black;
+        }
+
         .member-table-container {
             display: flex;
             justify-content: space-between;
             margin-bottom: 20px;
         }
+
         .member-table {
             flex: 1;
             border: 1px solid #ccc;
@@ -84,13 +89,16 @@
             margin: 0 auto;
             margin-left: -280px;
         }
+
         .member-table img {
             display: block;
             margin: 0 auto 10px;
         }
+
         .member-table td {
             padding: 5px;
         }
+
         .abt-us-table {
             flex: 1;
             border: 1px solid #ccc;
@@ -100,9 +108,11 @@
             max-width: calc(80% - 10px);
             margin: 0 auto;
         }
+
         .abt-us-table td {
             padding: 5px;
         }
+
         .faq-table {
             flex: 1;
             border: 1px solid #ccc;
@@ -112,6 +122,7 @@
             max-width: calc(80% - 10px);
             margin: 0 auto;
         }
+
         .faq-table td {
             padding: 5px;
         }
@@ -126,6 +137,7 @@
             max-width: 1000px;
             margin: 0 auto;
         }
+
         .nav-table {
             flex: 1;
             text-align: center;
@@ -133,9 +145,11 @@
             padding: 0;
             border-spacing: 5px;
         }
+
         .nav-table td {
             padding: 5px;
         }
+
         .nav-table a {
             text-decoration: none;
             color: white;
@@ -149,6 +163,7 @@
             border-radius: 10px;
             padding: 10px;
         }
+
         .group-table h2 {
             margin: 0;
             font-size: 1.2em;
@@ -184,6 +199,7 @@
         .faq-item p {
             margin-bottom: 0;
         }
+
     </style>
 </head>
 <body>
@@ -206,7 +222,7 @@
     <!-- Home Section -->
     <div id="home" style="height: 30vh;" >
         <div class="home-intro" style="position: relative; width: 60%; margin: 20px auto; border: 1px solid rgba(255, 255, 255, 0.3); background-color: rgba(255, 255, 255, 0.362); border-radius: 10px; padding: 20px; text-align: center; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-top: 5rem; margin-bottom: -2rem;">
-            <h2 style="position: relative; z-index: 2; background: rgba(255, 255, 255, 0); padding: 10px; text-align: justify; line-height: 1.5; font-family: 'Arial', sans-serif; ">
+            <h2 class="black-text" style="position: relative; z-index: 2; background: rgba(255, 255, 255, 0); padding: 10px; text-align: justify; line-height: 1.5; font-family: 'Arial', sans-serif; ">
                 Our team of young computer engineers is dedicated to pioneering innovative solutions and setting new standards in technology. Aspiring to be recognized as the 'Golden Eggs' in the industry, we strive to combine our passion for cutting-edge development with a commitment to excellence, aiming to make a lasting impact through our creativity and expertise.
             </h2>
             <img src="hau.jpg" style="position: absolute; top: 50%; left: 50%; width: 300px; height: auto; opacity: 0.2; z-index: 1; transform: translate(-50%, -50%);">
@@ -233,7 +249,7 @@
                             <p class="member-description">Hobby: sports/videogames/watching/sleeping</p>
                             <p class="member-description">Facts About Yourself: A very pasmado person.</p>
                             <p class="member-description">Motto: Failure is not an option when success is your destination.</p>
-                            <p class="member-description">Email: <a href="joshmarkescano@gmail.com">joshmarkescano@gmail.com</a></p>
+                            <p class="member-description">Email: <a href="mailto:joshmarkescano@gmail.com">joshmarkescano@gmail.com</a></p>
                         </td>
                     </tr>
                 </table>
@@ -252,11 +268,11 @@
                     <tr>
                         <td>
                             <h2>Member 2</h2>
-                            <p>Name: Lee Miranda</p>
-                            <p>Hobby: Sports/Videogames/Spending money</p>
-                            <p>Facts About Yourself: Pogi daw ako sabi ni mommy</p>
-                            <p>Motto: Whatever goes around, comes around.</p>
-                            <p>Email: <a href="vbmiranda@student.hau.edu.ph">vbmiranda@student.hau.edu.ph</a></p>
+                            <p class="member-description">Name: Lee Miranda</p>
+                            <p class="member-description">Hobby: sports, games</p>
+                            <p class="member-description">Facts About Yourself: Focused</p>
+                            <p class="member-description">Motto: I can do all things through Christ who strengthens me.</p>
+                            <p class="member-description">Email: <a href="mailto:example@example.com">example@example.com</a></p>
                         </td>
                     </tr>
                 </table>
@@ -266,7 +282,7 @@
         <!-- Member 3 -->
         <div class="member-table-container">
             <div class="member-container">
-                <img src="member3.jpg" alt="Whesley Ocampo">
+                <img src="member3.jpg" alt="Julius Caezar V. Manalo">
                 <div class="member-details">
                 </div>
             </div>
@@ -275,11 +291,11 @@
                     <tr>
                         <td>
                             <h2>Member 3</h2>
-                            <p>Name: Whesley Ocampo</p>
-                            <p>Hobby: Playing Online Games</p>
-                            <p>Facts About Yourself: Your childhood celebrity crush, especially if it was a cartoon.</p>
-                            <p>Motto: The only one who can tell you,you can’t win, is you, and you don’t have to listen.</p>
-                            <p>Email: <a href="wmocampo@student.hau.edu.ph">wmocampo@student.hau.edu.ph</a></p>
+                            <p class="member-description">Name: Julius Caezar V. Manalo</p>
+                            <p class="member-description">Hobby: Watch Movies, Play Video Games, Listening to Music</p>
+                            <p class="member-description">Facts About Yourself: I make music in my free time.</p>
+                            <p class="member-description">Motto: Just do your best.</p>
+                            <p class="member-description">Email: <a href="mailto:juliuscaezarmanalo@hau.edu.ph">juliuscaezarmanalo@hau.edu.ph</a></p>
                         </td>
                     </tr>
                 </table>
@@ -287,10 +303,9 @@
         </div>
         <br/>
         <!-- Member 4 -->
-                 <!-- Member 4 -->
         <div class="member-table-container">
             <div class="member-container">
-                <img src="member4.jpg" alt="Freiderich S. Peralta">
+                <img src="member4.jpg" alt="Member 4">
                 <div class="member-details">
                 </div>
             </div>
@@ -299,11 +314,11 @@
                     <tr>
                         <td>
                             <h2>Member 4</h2>
-                            <p>Name: Freiderich S. Peralta</p>
-                            <p>Hobby: Sports/Playing the Piano/Drawing/Videogames</p>
-                            <p>Facts About Yourself: A friendly guy who loves to interact anyone.</p>
-                            <p>Motto: Worrying wont stop the bad stuff from happening, it just stops you from enjoying the good.</p>
-                            <p>Email: <a href="fsperalta@student.hau.edu.ph">fsperalta@student.hau.edu.ph</a></p>
+                            <p class="member-description">Name: Adrian Laurence P. Pantaleon</p>
+                            <p class="member-description">Hobby: Playing Guitar, Eating, Reading, Sports, and Watching TV Series and Movies</p>
+                            <p class="member-description">Facts About Yourself: I'm a sentimental person.</p>
+                            <p class="member-description">Motto: Love your own.</p>
+                            <p class="member-description">Email: <a href="mailto:example@example.com">example@example.com</a></p>
                         </td>
                     </tr>
                 </table>
@@ -313,7 +328,7 @@
         <!-- Member 5 -->
         <div class="member-table-container">
             <div class="member-container">
-                <img src="member5.jpg" alt="Arjay Ranzel Z. Ramirez">
+                <img src="member5.jpg" alt="Member 5">
                 <div class="member-details">
                 </div>
             </div>
@@ -322,21 +337,21 @@
                     <tr>
                         <td>
                             <h2>Member 5</h2>
-                            <p>Name: Arjay Ranzel Z. Ramirez</p>
-                            <p>Hobby: Playing FPS Games/Cycling</p>
-                            <p>Facts About Yourself: Very competitive in FPS Games</p>
-                            <p>Motto: Just be yourself and enjoy what you have</p>
-                            <p>Email: <a href="azramirez1@student.hau.edu.ph">azramirez1@student.hau.edu.ph</a></p>
+                            <p class="member-description">Name: Christian G. Ramos</p>
+                            <p class="member-description">Hobby: Playing Video Games, Watching Anime, Listening to Music</p>
+                            <p class="member-description">Facts About Yourself: I can do all things through Christ who strengthens me.</p>
+                            <p class="member-description">Motto: Never Give Up!</p>
+                            <p class="member-description">Email: <a href="mailto:example@example.com">example@example.com</a></p>
                         </td>
                     </tr>
                 </table>
             </div>
         </div>
         <br/>
-        <!-- Member 5 -->
+        <!-- Member 6 -->
         <div class="member-table-container">
             <div class="member-container">
-                <img src="member6.jpg" alt="Yun We Seong">
+                <img src="member6.jpg" alt="Member 6">
                 <div class="member-details">
                 </div>
             </div>
@@ -345,11 +360,11 @@
                     <tr>
                         <td>
                             <h2>Member 6</h2>
-                            <p>Name: Yun We Seong</p>
-                            <p>Hobby: Videogames</p>
-                            <p>Facts About Yourself: Nice guy</p>
-                            <p>Motto: Don't compare yourself to the others</p>
-                            <p>Email: <a href="wyun@student.hau.edu.ph">wyun@student.hau.edu.ph</a></p>
+                            <p class="member-description">Name: Nicole Hannah Y. Martinez</p>
+                            <p class="member-description">Hobby: Playing Online Games, Drawing, Watching TV Series and Movies</p>
+                            <p class="member-description">Facts About Yourself: A very sleepy person.</p>
+                            <p class="member-description">Motto: Mind over matter</p>
+                            <p class="member-description">Email: <a href="mailto:example@example.com">example@example.com</a></p>
                         </td>
                     </tr>
                 </table>
