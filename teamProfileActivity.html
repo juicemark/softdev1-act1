@@ -6,13 +6,14 @@
     <title>Team Profiles</title>
     <style>
         body {
-            background-image: url('samplePic.jpg');
+            background-image: url('GroupPhoto.png');
             background-size: cover;
-            background-position: center;
+            background-attachment: fixed ;
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             color: white;
+            background-repeat: no-repeat;
         }
 
         .welcome-section {
@@ -181,21 +182,12 @@
     </style>
 </head>
 <body>
-    <!-- Welcome Section -->
-    <div class="welcome-section">
-        <div class="centered-text">
-            <h1>Welcome to our Team Profile HTML Site</h1>
-        </div>
-    </div>
 
-    <!-- Navigation and Group Table Section -->
-    <div class="nav-table-container">
-        <!-- Group Table -->
+    <div class="nav-table-container" style="margin-top: 1rem;">
         <div class="group-table">
             <h2>Group 6</h2>
         </div>
 
-        <!-- Navigation -->
         <table class="nav-table">
             <tr>
                 <td><a href="#home">Home</a></td>
@@ -207,13 +199,9 @@
     </div>
 
     <!-- Home Section -->
-    <div id="home" style="height: 100vh;">
-        <div class="additional-image">
-            <h1>INSERT GROUP PHOTO</h1>
-            <img src="samplePic.jpg" alt="Additional Image">
-        </div>
-        <div class="home-intro" style="position: relative; width: 60%; margin: 20px auto; border: 1px solid rgba(255, 255, 255, 0.3); background-color: rgba(255, 255, 255, 0.362); border-radius: 10px; padding: 20px; text-align: center; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
-            <h2 style="position: relative; z-index: 2; background: rgba(255, 255, 255, 0); padding: 10px; text-align: justify; line-height: 1.5; font-family: 'Arial', sans-serif;">
+    <div id="home" style="height: 30vh;" >
+        <div class="home-intro" style="position: relative; width: 60%; margin: 20px auto; border: 1px solid rgba(255, 255, 255, 0.3); background-color: rgba(255, 255, 255, 0.362); border-radius: 10px; padding: 20px; text-align: center; color: white; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); margin-top: 5rem; margin-bottom: -2rem;">
+            <h2 style="position: relative; z-index: 2; background: rgba(255, 255, 255, 0); padding: 10px; text-align: justify; line-height: 1.5; font-family: 'Arial', sans-serif; ">
                 Our team of young computer engineers is dedicated to pioneering innovative solutions and setting new standards in technology. Aspiring to be recognized as the 'Golden Eggs' in the industry, we strive to combine our passion for cutting-edge development with a commitment to excellence, aiming to make a lasting impact through our creativity and expertise.
             </h2>
             <img src="hau.jpg" style="position: absolute; top: 50%; left: 50%; width: 300px; height: auto; opacity: 0.2; z-index: 1; transform: translate(-50%, -50%);">
@@ -222,7 +210,7 @@
 
     <!-- Team Members Content -->
     <div id="members">
-        <h1>Team Profiles</h1>
+        <h1 style="margin-left: 15rem;">About Us</h1>
 
         <!-- Member 1 -->
         <div class="member-table-container">
@@ -337,13 +325,6 @@
         </div>
     </div>
 
-    <!-- About Us Section -->
-    <div id="abt-us" style="height: 100vh;">
-        <div class="abt-us-table">
-            <h1 style="text-align: center; color: black;">ABOUT US</h1>
-        </div>
-    </div>
-
     <!-- FAQ Section -->
     <div id="faq" style="height: 100vh;">
         <div class="faq-table">
@@ -379,6 +360,9 @@
                 <p>- Our group is located on Holy Angel University. We can be contacted through our individual profiles, either on our email or on our contact numbers.</p>
             </div>
         </div>
+        <footer style="background-color: transparent; text-align: center; padding: 20px;">
+            <p style="color: white;">© 2024 Copyright</p>
+        </footer>
     </div>
 </body>
 </html>
